@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+    </header>
+    <main>
+        <div id="principal">
+            <div class="currency-inputs">
+                <label for="to-convert-currency">Moeda 1</label>
+                <select id="currency-1" onchange="changeSelect()">
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="yuan">Yuan</option>
+                    <option value="peso">Peso Argentino</option>
+                </select>
+            </div>
+            <div class="currency-inputs">
+                <label for="to-convert-currency">Moeda 2</label>
+                <select id="currency-2" onchange="changeSelect()">
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="yuan">Yuan</option>
+                    <option value="peso">Peso Argentino</option>
+                </select>
+            </div>
+        </div>
+        <div id="converter">
+            <label for="converter">Valor:</label>
+            <input type="number" id="value-to-convert" placeholder="Digite aqui o valor:">
+            <br>
+            <p id="result">Resultado:</p>
+            <br>
+            <button id="confirm" type="button">Converter</button>
+
+        </div>
+    </main>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
